@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input[type="password"]{
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-    <form >
-
+    <form>
+        <div>
+            <label for="i">name</label>
+            <input type="text" placeholder="enter the name" id="i" required>
+        </div>
         <div>
             <label for="user">username</label>
             <input type="text" placeholder="enter a username" id="user" required value="909909" readonly>
-    </div>
-    <div class="">
-        <label for="">password</label>
-    <input type="password" placeholder="enter a password" id="" disabled mi>
-    </div>
-    <div class="">
-        <label for="">number</label>
-    <input type="number" placeholder="enter a number" id="">
-    </div>
-    <div class="">
-        <label for="">password</label>
-        <input type="email" placeholder="enter a email" id="" required>
-    </div>
-    <div class="">
-        <p>Gender</p>
-        <input type="radio" name="Gender" id="">
-        <label for="">Male</label>
-        <input type="radio" name="Gender" id="">
-        <label for="">Female</label>
-    </div>
-    <div class="">
-        <input type="checkbox" id="term">
-        <label for="term">accept term & conditions</label>
-    </div>
-    <div class="">
-        <input type="file" name="" id="">
-        <input type="date" name="" id="">
-    </div>
-    <button type="button">Login</button>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-</form>
+        </div>
+        <div class="">
+            <label for="">password</label>
+            <input type="password" placeholder="enter a password" id="">
+        </div>
+        <div class="">
+            <label for="">number</label>
+            <input type="number" placeholder="enter a number" id="">
+        </div>
+        <div class="">
+            <label for="">password</label>
+            <input type="email" placeholder="enter a email" id="" required>
+        </div>
+        <div class="">
+            <p>Gender</p>
+            <input type="radio" name="Gender" id="">
+            <label for="">Male</label>
+            <input type="radio" name="Gender" id="">
+            <label for="">Female</label>
+        </div>
+        <div class="">
+            <input type="checkbox" id="term">
+            <label for="term">accept term & conditions</label>
+        </div>
+        <div class="">
+            <input type="file" name="" id="">
+            <input type="date" name="" id="">
+        </div>
+
+        <div class="">
+            <label for="role">Designation</label>
+            <select name="" id="">
+                <option value="">Select a option</option>
+                <option value="">IT</option>
+                <option value="">QA</option>
+                <option value="">QA</option>
+            </select>
+        </div>
+        <button type="button">Login</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
 </body>
 </html>
