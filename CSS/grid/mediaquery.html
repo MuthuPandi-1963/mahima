@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shoply — Simple Ecommerce Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shoply — quality products, fast delivery. Browse our featured collections." />
+  <link rel="stylesheet" href="./mediaQuery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Top navigation -->
+  <header>
+    <div class="logo">
+        <div class="logo-1">
+        <h1>Shoply</h1>
+    <p>Your one-stop shop for everyday essentials</p>
+    </div>
+    <p>
+      <a href="#cart">Cart (0)</a> 
+      <a href="#signin">Sign in</a> 
+      <a href="#signup">Register</a>
+    </p>
+    <button class="menu">  
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</div>
+
+<div class="navbar">
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#collections">Collections</a> |
+      <a href="#featured">Featured</a> |
+      <a href="#faq">FAQ</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- Search & account quick links -->
+    <form action="#" method="get" id="search" aria-label="Search products">
+        <label for="search">Search products:</label>
+      <input type="search" id="search" name="q" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
+
+    
+</div>
+  </header>
+
+  <!-- Hero / main CTA -->
+  <main id="home">
+    <section id="hero" aria-labelledby="hero-heading">
+      <h2 id="hero-heading">Spring Deals — Up to 40% off selected items</h2>
+      <p>Handpicked products, trusted brands, fast shipping.</p>
+      <p>
+        <a href="#featured">Shop Featured</a>
+        |
+        <a href="#collections">Browse Collections</a>
+      </p>
+      <p>Free delivery on orders over ₹999.</p>
+    </section>
+
+    <!-- Key value propositions -->
+    <section id="features" aria-labelledby="features-heading">
+      <h3 id="features-heading">Why shop with us?</h3>
+      <ul>
+        <li>Verified sellers and product quality checks</li>
+        <li>30-day returns and secure payments</li>
+        <li>Fast shipping and easy tracking</li>
+      </ul>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" aria-labelledby="collections-heading">
+      <h3 id="collections-heading">Top Collections</h3>
+      <ul>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#apparel">Apparel</a></li>
+        <li><a href="#home">Home & Living</a></li>
+        <li><a href="#beauty">Beauty</a></li>
+      </ul>
+    </section>
+
+    <!-- Featured products (table used for layout without CSS) -->
+    <section id="featured" aria-labelledby="featured-heading">
+      <h3 id="featured-heading">Featured Products</h3>
+
+      <!-- 3-column product grid implemented with a table (works without CSS) -->
+      <table role="grid" border="1" cellpadding="8" cellspacing="0">
+        <caption>Featured picks</caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>Wireless Headphones</h4>
+              <img src="https://via.placeholder.com/150" alt="Wireless Headphones" width="150" height="150" />
+            </td>
+            <td>
+              <p>Comfortable over-ear Bluetooth headphones with long battery life.</p>
+              <p>Features: Noise isolation, mic, 20h playtime.</p>
+            </td>
+            <td>
+              <p>₹2,499</p>
+              <form action="#" method="post">
+                <input type="hidden" name="product_id" value="p001" />
+                <button type="submit" name="add_to_cart">Add to cart</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h4>Everyday Sneakers</h4>
+              <img src="https://via.placeholder.com/150" alt="Everyday Sneakers" width="150" height="150" />
+            </td>
+            <td>
+              <p>Lightweight and breathable sneakers for daily wear.</p>
+              <p>Available sizes: 6,7,8,9,10</p>
+            </td>
+            <td>
+              <p>₹1,799</p>
+              <form action="#" method="post">
+                <input type="hidden" name="product_id" value="p002" />
+                <label for="size-p002">Size:</label>
+                <select id="size-p002" name="size">
+                  <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                </select>
+                <button type="submit" name="add_to_cart">Add to cart</button>
+              </form>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h4>Stainless Steel Cookware</h4>
+              <img src="https://via.placeholder.com/150" alt="Cookware set" width="150" height="150" />
+            </td>
+            <td>
+              <p>Durable 5-piece cookware set — oven safe and dishwasher friendly.</p>
+            </td>
+            <td>
+              <p>₹3,299</p>
+              <form action="#" method="post">
+                <input type="hidden" name="product_id" value="p003" />
+                <button type="submit" name="add_to_cart">Add to cart</button>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Promotions / banner area -->
+    <section id="promo" aria-labelledby="promo-heading">
+      <h3 id="promo-heading">Limited Time Offer</h3>
+      <p>Use code <strong>WELCOME10</strong> for an extra 10% off on first purchase.</p>
+      <p>Terms apply. Offer valid until stock lasts.</p>
+    </section>
+
+    <!-- Newsletter subscription -->
+    <section id="newsletter" aria-labelledby="newsletter-heading">
+      <h3 id="newsletter-heading">Get exclusive offers</h3>
+      <form action="#" method="post" aria-label="Subscribe to newsletter">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Testimonials (simple list) -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <h3 id="testimonials-heading">What customers say</h3>
+      <blockquote>
+        "Great service and fast delivery. Product quality was top-notch." — A. Kumar
+      </blockquote>
+      <blockquote>
+        "Easy returns and helpful support." — S. Patel
+      </blockquote>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <h3 id="faq-heading">Frequently Asked Questions</h3>
+      <dl>
+        <dt>What is the return policy?</dt>
+        <dd>30-day returns on eligible items. Contact support for steps.</dd>
+
+        <dt>How long does shipping take?</dt>
+        <dd>Standard shipping: 3–7 business days. Express options available.</dd>
+
+        <dt>Do you ship internationally?</dt>
+        <dd>We ship within India. International shipping is supported in select regions.</dd>
+      </dl>
+    </section>
+
+    <!-- Contact / Support -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact us</h3>
+      <p>Customer support: <a href="mailto:support@shoply.example">support@shoply.example</a></p>
+      <p>Phone: +91-12345-67890</p>
+
+      <form action="#" method="post" aria-label="Contact form">
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="name" required />
+
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="email" required />
+
+        <label for="contact-message">Message:</label>
+        <textarea id="contact-message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <time datetime="2025-01-01">2025</time> Shoply. All rights reserved.</p>
+    <p>
+      <a href="#privacy">Privacy Policy</a> |
+      <a href="#terms">Terms of Service</a>
+    </p>
+    <address>
+      Shoply HQ, Chennai, Tamil Nadu, India.
+    </address>
+  </footer>
+
+</body>
+</html>
